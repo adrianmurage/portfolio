@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello Bulma!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <section class="section">
+      <nav class="navbar is-fixed-top pt-6 px-6">
+        <div class="navbar-brand is-size-4">Adrian Murage</div>
+        <div class="navbar-menu is-active">
+          <div class="navbar-end">
+            <a href="#about" class="navbar-item">⚡ About me</a>
+            <a href="#recommendations" class="navbar-item">✅ Recommendations</a>
+            <a href="#projects" class="navbar-item">🛠 Projects</a>
+            <a href="#writing" class="navbar-item">📝 Writing</a>
+            <a href="#contact" class="navbar-item">📫 Contact</a>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Hi there, I'm Adrian 👋🏽</h1>
+        <div class="columns">
+          <div class="column is-half content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse vehicula ante in turpis interdum feugiat quis nec
+              tortor. Fusce sed quam neque. Fusce interdum fringilla tempor.
+              Integer ut tempus metus. Donec nec lectus eget purus pellentesque
+              tempor vel pulvinar ligula.
+            </p>
+            <p>
+              Proin rutrum massa quis diam tincidunt, suscipit dignissim lectus
+              cursus. Sed sed ultrices libero, eget interdum enim. Nullam
+              commodo ex eu lacus auctor, nec malesuada sapien vestibulum.
+            </p>
+          </div>
+          <div class="column">
+            <figure class="image" style="width: 200px; margin-left: 200px">
+              <img class="is-rounded" src="./images/adrian.jpeg" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="recommendations">
+      <div class="container">
+        <h2 class="title">Recommendations</h2>
+        <p class="content">
+          I have interned at two startups,
+          <span
+            ><a
+              class="has-text-info has-text-weight-bold"
+              href="https://ajua.com"
+              >Ajua</a
+            ></span
+          >
+          (managed by Andrew) and
+          <span
+            ><a
+              class="has-text-success has-text-weight-bold"
+              href="https://hackernoon.com"
+              >HackerNoon</a
+            ></span
+          >
+          (managed by Amy).
+          <br />
+          Here is what my managers, Andrew and Amy had to say at the end of the
+          respective internships:
+        </p>
+
+        <div class="columns mt-6">
+          <div class="column">
+            <div class="card">
+              <div class="columns pt-3">
+                <div class="">
+                  <figure class="image is-48x48 ml-5">
+                    <img class="is-rounded" src="./images/andrew_kamau.jpeg" />
+                  </figure>
+                </div>
+                <div class="column content is-four-fifths">
+                  <a
+                    href="https://www.linkedin.com/in/kamauandrew"
+                    class="title is-5 ml-5 mt-4 mb-0 has-text-info"
+                    >Andrew Kamau</a
+                  >
+                  <p class="ml-5 is-size-7">Product Manager at Google</p>
+                  <p class="ml-5 pb-6">
+                    Adrian is a talented, results-driven developer. His passion,
+                    creativity, and energy make him a solid addition to software
+                    engineering teams. He's very thoughtful about identifying
+                    problems, crafting and implementing technical solutions; and
+                    particularly outstanding at documenting his code.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="columns pt-3">
+                <div class="">
+                  <figure class="image is-48x48 ml-5">
+                    <img class="is-rounded" src="./images/amy_tom.jpeg" />
+                  </figure>
+                </div>
+                <div class="column content is-four-fifths">
+                  <a
+                    href="https://www.linkedin.com/in/amymtom"
+                    class="title is-5 ml-5 mt-4 mb-0 has-text-info"
+                    >Amy Tom</a
+                  >
+                  <p class="ml-5 is-size-7">
+                    Content Strategist for Startups & Tech Companies
+                  </p>
+                  <p class="ml-5 pb-5">
+                    Adrian worked on the podcast with me as part of the
+                    <span
+                      ><a
+                        class="has-text-success has-text-weight-bold"
+                        href="https://hackernoon.com/apply-to-the-hackership-program-today"
+                        >Hackership</a
+                      ></span
+                    >
+                    program. Not only did he edit the podcast to perfection, he
+                    created design templates and added his own creativity to the
+                    show. He was very responsive to feedback and encorporated
+                    any suggestions I made. I can highly recommend Adrian for
+                    his podcast editing and attention to detail.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
