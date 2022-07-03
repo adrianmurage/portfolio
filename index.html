@@ -8,9 +8,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
+    <!-- navbar -->
     <section class="section">
       <!-- create hamburger menu -->
       <!-- https://www.youtube.com/watch?v=qvn2SxGvyPs&ab_channel=TheNetNinja -->
@@ -19,16 +20,20 @@
         <div class="navbar-menu">
           <div class="navbar-end">
             <a href="#about" class="navbar-item">⚡ About me</a>
-            <a href="#recommendations" class="navbar-item">✅ Recommendations</a>
             <a href="#projects" class="navbar-item">🛠 Projects</a>
             <a href="#writing" class="navbar-item">📝 Writing</a>
+            <a href="#recommendations" class="navbar-item"
+              >✅ Recommendations</a
+            >
             <a href="#contact" class="navbar-item">📫 Contact</a>
           </div>
         </div>
       </nav>
     </section>
+    <!-- navbar -->
 
-    <section class="section">
+    <!-- about -->
+    <section class="section" id="about">
       <div class="container">
         <h1 class="title">Hi there, I'm Adrian 👋🏽</h1>
         <div class="columns">
@@ -54,7 +59,166 @@
         </div>
       </div>
     </section>
+    <!-- about -->
 
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="content">
+          <h2 class="title">What I've been working on</h2>
+          <p>
+            I'm always looking to upskill and challenge myself.
+            <br />
+            Take a look at some of the personal and hackerthon projects I've
+            dedicated my time to:
+          </p>
+        </div>
+        <div class="columns mt-4">
+          <div class="column is-half">
+            <figure class="image is-16by9">
+              <img src="./images/product_list_homepage_pretty.png" />
+            </figure>
+            <div class="content pt-4">
+              <a class="title is-4" href="">Product List</a>
+              <p class="block mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse vehicula ante in turpis interdum feugiat quis nec
+                tortor.
+              </p>
+              <div class="tags">
+                <span class="tag is-success">Personal</span>
+              </div>
+
+              <a class="has-text-info has-text-weight-bold" href="#"
+                >VIEW PROJECT ➡</a
+              >
+            </div>
+          </div>
+          <div class="column is-half">
+            <figure class="image is-16by9">
+              <img src="./images/proquire_home_page_pretty.png" />
+            </figure>
+            <div class="content pt-4">
+              <a class="title is-4" href="">Procquire</a>
+              <p class="block mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse vehicula ante in turpis interdum feugiat quis nec
+                tortor.
+              </p>
+              <div class="tags">
+                <span class="tag is-info">Hackerthon</span>
+              </div>
+              <a class="has-text-info has-text-weight-bold" href="#"
+                >VIEW PROJECT ➡</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- projects -->
+
+    <!-- Writing -->
+    <section class="section" id="writing">
+      <div class="container">
+        <h2 class="title">Writing</h2>
+        <p class="content">
+          I've written articles on Section.io's Engineering Education blog that
+          have ammassed a total of
+          <br />
+          almost 20,000 page views ✨
+          <br />
+        </p>
+        <p class="has-text-weight-medium">Here are my favourite ones:</p>
+        <div class="columns mt-6">
+          <div class="column is-half">
+            <div class="content pt-4">
+              <a
+                target="”_blank”"
+                class="title is-4"
+                href="https://www.section.io/engineering-education/setup-ssh-ubuntu-vm-aws/"
+                >How To Setup and SSH into an Ubuntu 18.04 Virtual Machine on
+                AWS</a
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="ContentPreview__StyledExternalLink-sc-106iwrp-5 ceLFlg"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              <p class="block mt-3 pr-3">
+                Many modern web applications today are served from the cloud.
+                Public cloud providers, like Google Cloud Platform (GCP), Amazon
+                Web Services (AWS), and Microsoft Azure, to name a few, offer
+                service models that enable this trend.
+              </p>
+              <a
+                target="”_blank”"
+                class="has-text-success has-text-weight-bold"
+                href="https://www.section.io/engineering-education/setup-ssh-ubuntu-vm-aws/"
+                >Read on the Engineering Education blog</a
+              >
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="content pt-4">
+              <a
+                target="”_blank”"
+                class="title is-4"
+                href="https://www.section.io/engineering-education/js-execution-under-the-hood/"
+                >What Happens When JavaScript Runs My Code?
+              </a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="ContentPreview__StyledExternalLink-sc-106iwrp-5 ceLFlg"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              <p class="block mt-3 pr-3 pt-2">
+                JavaScript is a single-threaded language. Meaning only one
+                command executes at a time. It has a Synchronous model of
+                execution, where each line is executed line by line, top to
+                bottom. In this guide, you will learn what happens as the
+                JavaScript engine threads down your code.
+              </p>
+              <a
+                target="”_blank”"
+                class="has-text-success has-text-weight-bold"
+                href="https://www.section.io/engineering-education/js-execution-under-the-hood/"
+                >Read on the Engineering Education blog</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Writing -->
+
+    <!-- recommendations -->
     <section class="section" id="recommendations">
       <div class="container">
         <h2 class="title">Recommendations</h2>
@@ -84,9 +248,9 @@
         <div class="columns mt-6">
           <div class="column">
             <div class="card">
-              <div class="columns pt-3">
+              <div class="columns is-gapless pt-3">
                 <div class="">
-                  <figure class="image is-48x48 ml-5">
+                  <figure class="image is-48x48 ml-5 mt-1">
                     <img class="is-rounded" src="./images/andrew_kamau.jpeg" />
                   </figure>
                 </div>
@@ -110,9 +274,9 @@
           </div>
           <div class="column">
             <div class="card">
-              <div class="columns pt-3">
+              <div class="columns is-gapless pt-3">
                 <div class="">
-                  <figure class="image is-48x48 ml-5">
+                  <figure class="image is-48x48 ml-5 mt-1">
                     <img class="is-rounded" src="./images/amy_tom.jpeg" />
                   </figure>
                 </div>
@@ -147,5 +311,6 @@
         </div>
       </div>
     </section>
+    <!-- recommendations -->
   </body>
 </html>
