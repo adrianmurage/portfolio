@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="has-navbar-fixed-top">
+<html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hello Bulma!</title>
+    <title>Adrian Murage</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
@@ -15,17 +15,21 @@
     <section class="section">
       <!-- create hamburger menu -->
       <!-- https://www.youtube.com/watch?v=qvn2SxGvyPs&ab_channel=TheNetNinja -->
-      <nav class="navbar is-fixed-top pt-6 px-6">
-        <div class="navbar-brand is-size-4">Adrian Murage</div>
+      <nav class="navbar  px-6">
+        <a
+          href="./index.html"
+          class="navbar-brand is-size-4 has-text-grey has-text-weight-bold"
+          >Adrian Murage
+        </a>
         <div class="navbar-menu">
           <div class="navbar-end">
-            <a href="#about" class="navbar-item">⚡ About me</a>
-            <a href="#projects" class="navbar-item">🛠 Projects</a>
-            <a href="#writing" class="navbar-item">📝 Writing</a>
-            <a href="#recommendations" class="navbar-item"
+            <a href="./index.html#about" class="navbar-item">⚡ About me</a>
+            <a href="./index.html#projects" class="navbar-item">🛠 Projects</a>
+            <a href="./index.html#writing" class="navbar-item">📝 Writing</a>
+            <a href="./index.html#recommendations" class="navbar-item"
               >✅ Recommendations</a
             >
-            <a href="#contact" class="navbar-item">📫 Contact</a>
+            <a href="./index.html#contact" class="navbar-item">📫 Contact</a>
           </div>
         </div>
       </nav>
@@ -76,10 +80,12 @@
         <div class="columns mt-4">
           <div class="column is-half">
             <figure class="image is-16by9">
-              <img src="./images/product_list_homepage_pretty.png" />
+              <a class="title is-4" href="./productlist.html">
+                <img src="./images/product_list_homepage_pretty.png" />
+              </a>
             </figure>
             <div class="content pt-4">
-              <a class="title is-4" href="">Product List</a>
+              <a class="title is-4" href="./productlist.html">Product List</a>
               <p class="block mt-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse vehicula ante in turpis interdum feugiat quis nec
@@ -89,17 +95,21 @@
                 <span class="tag is-success">Personal</span>
               </div>
 
-              <a class="has-text-info has-text-weight-bold" href="#"
+              <a
+                class="has-text-info has-text-weight-bold"
+                href="./productlist.html"
                 >VIEW PROJECT ➡</a
               >
             </div>
           </div>
           <div class="column is-half">
             <figure class="image is-16by9">
-              <img src="./images/proquire_home_page_pretty.png" />
+              <a class="title is-4" href="./procquire.html">
+                <img src="./images/proquire_home_page_pretty.png" />
+              </a>
             </figure>
             <div class="content pt-4">
-              <a class="title is-4" href="">Procquire</a>
+              <a class="title is-4" href="./procquire.html">Procquire</a>
               <p class="block mt-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse vehicula ante in turpis interdum feugiat quis nec
@@ -108,7 +118,9 @@
               <div class="tags">
                 <span class="tag is-info">Hackerthon</span>
               </div>
-              <a class="has-text-info has-text-weight-bold" href="#"
+              <a
+                class="has-text-info has-text-weight-bold"
+                href="./procquire.html"
                 >VIEW PROJECT ➡</a
               >
             </div>
@@ -241,7 +253,7 @@
           >
           (managed by Amy).
           <br />
-          Here is what my managers, Andrew and Amy had to say at the end of the
+          Here is what my managers, Andrew and Amy had to say at the end of my
           respective internships:
         </p>
 
