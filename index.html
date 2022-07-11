@@ -13,26 +13,26 @@
   <body>
     <!-- navbar -->
     <section class="section">
+        <nav class="navbar">
+          <a
+            href="./index.html"
+            class="navbar-brand is-size-4 has-text-grey has-text-weight-bold"
+            >Adrian Murage
+          </a>
+          <div class="navbar-menu">
+            <div class="navbar-end">
+              <a href="./index.html#about" class="navbar-item">⚡ About me</a>
+              <a href="./index.html#projects" class="navbar-item">🛠 Projects</a>
+              <a href="./index.html#writing" class="navbar-item">📝 Writing</a>
+              <a href="./index.html#recommendations" class="navbar-item"
+                >✅ Recommendations</a
+              >
+              <a href="./index.html#contact" class="navbar-item">📫 Contact</a>
+            </div>
+        </nav>
+      </div>
       <!-- create hamburger menu -->
       <!-- https://www.youtube.com/watch?v=qvn2SxGvyPs&ab_channel=TheNetNinja -->
-      <nav class="navbar  px-6">
-        <a
-          href="./index.html"
-          class="navbar-brand is-size-4 has-text-grey has-text-weight-bold"
-          >Adrian Murage
-        </a>
-        <div class="navbar-menu">
-          <div class="navbar-end">
-            <a href="./index.html#about" class="navbar-item">⚡ About me</a>
-            <a href="./index.html#projects" class="navbar-item">🛠 Projects</a>
-            <a href="./index.html#writing" class="navbar-item">📝 Writing</a>
-            <a href="./index.html#recommendations" class="navbar-item"
-              >✅ Recommendations</a
-            >
-            <a href="./index.html#contact" class="navbar-item">📫 Contact</a>
-          </div>
-        </div>
-      </nav>
     </section>
     <!-- navbar -->
 
@@ -76,6 +76,55 @@
             Take a look at some of the personal and hackerthon projects I've
             dedicated my time to:
           </p>
+        </div>
+        <div class="columns mt-4">
+          <div class="column is-half">
+            <figure class="image is-16by9">
+              <a class="title is-4" href="./marketplace.html">
+                <img src="./images/marketplace_pretty.png" />
+              </a>
+            </figure>
+            <div class="content pt-4">
+              <a class="title is-4" href="./marketplace.html">Marketplace</a>
+              <p class="block mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse vehicula ante in turpis interdum feugiat quis nec
+                tortor.
+              </p>
+              <div class="tags">
+                <span class="tag is-success">Personal</span>
+              </div>
+
+              <a
+                class="has-text-info has-text-weight-bold"
+                href="./marketplace.html"
+                >VIEW PROJECT ➡</a
+              >
+            </div>
+          </div>
+          <div class="column is-half">
+            <figure class="image is-16by9">
+              <a class="title is-4" href="./procquire.html">
+                <img src="./images/proquire_home_page_pretty.png" />
+              </a>
+            </figure>
+            <div class="content pt-4">
+              <a class="title is-4" href="./procquire.html">Procquire</a>
+              <p class="block mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse vehicula ante in turpis interdum feugiat quis nec
+                tortor.
+              </p>
+              <div class="tags">
+                <span class="tag is-info">Hackerthon</span>
+              </div>
+              <a
+                class="has-text-info has-text-weight-bold"
+                href="./procquire.html"
+                >VIEW PROJECT ➡</a
+              >
+            </div>
+          </div>
         </div>
         <div class="columns mt-4">
           <div class="column is-half">
@@ -256,24 +305,36 @@
           Here is what my managers, Andrew and Amy had to say at the end of my
           respective internships:
         </p>
-
-        <div class="columns mt-6">
+        <div class="columns">
           <div class="column">
             <div class="card">
-              <div class="columns is-gapless pt-3">
-                <div class="">
-                  <figure class="image is-48x48 ml-5 mt-1">
-                    <img class="is-rounded" src="./images/andrew_kamau.jpeg" />
-                  </figure>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img
+                        src="./images/andrew_kamau.jpeg"
+                        alt="Placeholder image"
+                        class="is-rounded"
+                      />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">
+                      <a
+                        href="https://www.linkedin.com/in/kamauandrew"
+                        class="title is-4 has-text-info"
+                        >Andrew Kamau
+                      </a>
+                    </p>
+
+                    <p class="subtitle is-6 has-text-grey-light">
+                      Product Manager at Google
+                    </p>
+                  </div>
                 </div>
-                <div class="column content is-four-fifths">
-                  <a
-                    href="https://www.linkedin.com/in/kamauandrew"
-                    class="title is-5 ml-5 mt-4 mb-0 has-text-info"
-                    >Andrew Kamau</a
-                  >
-                  <p class="ml-5 is-size-7">Product Manager at Google</p>
-                  <p class="ml-5 pb-6">
+                <div class="content">
+                  <p>
                     Adrian is a talented, results-driven developer. His passion,
                     creativity, and energy make him a solid addition to software
                     engineering teams. He's very thoughtful about identifying
@@ -286,22 +347,33 @@
           </div>
           <div class="column">
             <div class="card">
-              <div class="columns is-gapless pt-3">
-                <div class="">
-                  <figure class="image is-48x48 ml-5 mt-1">
-                    <img class="is-rounded" src="./images/amy_tom.jpeg" />
-                  </figure>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img
+                        src="./images/amy_tom.jpeg"
+                        alt="Placeholder image"
+                        class="is-rounded"
+                      />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">
+                      <a
+                        href="https://www.linkedin.com/in/amymtom"
+                        class="title is-4 has-text-info"
+                        >Amy Tom
+                      </a>
+                    </p>
+
+                    <p class="subtitle is-6 has-text-grey-light">
+                      Content Strategist for Startups & Tech Companies
+                    </p>
+                  </div>
                 </div>
-                <div class="column content is-four-fifths">
-                  <a
-                    href="https://www.linkedin.com/in/amymtom"
-                    class="title is-5 ml-5 mt-4 mb-0 has-text-info"
-                    >Amy Tom</a
-                  >
-                  <p class="ml-5 is-size-7">
-                    Content Strategist for Startups & Tech Companies
-                  </p>
-                  <p class="ml-5 pb-5">
+                <div class="content">
+                  <p>
                     Adrian worked on the podcast with me as part of the
                     <span
                       ><a
