@@ -10,29 +10,28 @@
     />
     <link rel="stylesheet" href="./index.css" />
   </head>
+
   <body>
     <!-- navbar -->
     <section class="section">
-        <nav class="navbar">
-          <a
-            href="./index.html"
-            class="navbar-brand is-size-4 has-text-grey has-text-weight-bold"
-            >Adrian Murage
-          </a>
-          <div class="navbar-menu">
-            <div class="navbar-end">
-              <a href="./index.html#about" class="navbar-item">⚡ About me</a>
-              <a href="./index.html#projects" class="navbar-item">🛠 Projects</a>
-              <a href="./index.html#writing" class="navbar-item">📝 Writing</a>
-              <a href="./index.html#recommendations" class="navbar-item"
-                >✅ Recommendations</a
-              >
-              <a href="./index.html#contact" class="navbar-item">📫 Contact</a>
-            </div>
-        </nav>
-      </div>
-      <!-- create hamburger menu -->
-      <!-- https://www.youtube.com/watch?v=qvn2SxGvyPs&ab_channel=TheNetNinja -->
+      <nav class="navbar">
+        <a
+          href="./index.html"
+          class="navbar-brand is-size-4 has-text-grey has-text-weight-bold"
+          >Adrian Murage
+        </a>
+        <div class="navbar-menu">
+          <div class="navbar-end">
+            <a href="./index.html#about" class="navbar-item">⚡ About me</a>
+            <a href="./index.html#projects" class="navbar-item">🛠 Projects</a>
+            <a href="./index.html#writing" class="navbar-item">📝 Writing</a>
+            <a href="./index.html#recommendations" class="navbar-item"
+              >✅ Recommendations</a
+            >
+            <a href="./index.html#contact" class="navbar-item">📫 Contact</a>
+          </div>
+        </div>
+      </nav>
     </section>
     <!-- navbar -->
 
@@ -56,7 +55,7 @@
             </p>
           </div>
           <div class="column is-flex is-justify-content-center">
-            <figure class="image" style="width: 200px;">
+            <figure class="image" style="width: 200px">
               <img class="is-rounded" src="./images/adrian.jpeg" />
             </figure>
           </div>
@@ -69,107 +68,64 @@
     <section class="section" id="projects">
       <div class="container">
         <div class="content">
-          <h2 class="title">What I've been working on</h2>
+          <h2 class="title">What I've been working on 🛠</h2>
           <p>
-            I'm always looking to upskill and challenge myself.
+            I am always looking to upskill and challenge myself.
             <br />
-            Take a look at some of the personal and hackerthon projects I've
-            dedicated my time to:
+            Here are a few of the projects I have dedicated my time to:
           </p>
         </div>
         <div class="columns mt-4">
-          <div class="column is-half">
-            <figure class="image is-16by9">
-              <a class="title is-4" href="./marketplace.html">
-                <img src="./images/marketplace_arch.png" />
-              </a>
-            </figure>
-            <div class="content pt-4">
-              <a class="title is-4" href="./marketplace.html">PBP Marketplace</a>
-              <p class="block mt-3">
-                A marketplace application that utilizes a decoupled architecture where the back and front end communicate via a Rest API that is served by the backend.
-              </p>
-              <div class="tags">
-                <span class="tag is-success">Personal</span>
+          <div class="hover-image column is-half">
+            <div class="card p-5">
+              <figure class="image is-16by9">
+                <a class="title is-4" href="./marketplace.html">
+                  <img src="./images/marketplace_arch.png" />
+                </a>
+              </figure>
+              <div class="content pt-4">
+                <a
+                  class="hover-project-underline-animation title is-4"
+                  href="./marketplace.html"
+                  >PBP Marketplace</a
+                >
+                <p class="block mt-2">
+                  A marketplace application I built to learn more about JSON Web
+                  Tokens(JWTs), Unit Testing, Deployement Pipelines and API
+                  Documentation.
+                </p>
+                <a
+                  class="has-text-info has-text-weight-bold"
+                  href="./marketplace.html"
+                  >VIEW PROJECT ➡</a
+                >
               </div>
-
-              <a
-                class="has-text-info has-text-weight-bold"
-                href="./marketplace.html"
-                >VIEW PROJECT ➡</a
-              >
             </div>
           </div>
-          <div class="column is-half">
-            <figure class="image is-16by9">
-              <a class="title is-4" href="./procquire.html">
-                <img src="./images/proquire_home_page_pretty.png" />
-              </a>
-            </figure>
-            <div class="content pt-4">
-              <a class="title is-4" href="./procquire.html">Procquire</a>
-              <p class="block mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse vehicula ante in turpis interdum feugiat quis nec
-                tortor.
-              </p>
-              <div class="tags">
-                <span class="tag is-info">Hackathon</span>
+          <div class="hover-image column is-half">
+            <div class="card p-5">
+              <figure class="image is-16by9">
+                <a class="title is-4" href="./procquire.html">
+                  <img src="./images/proquire_home_page_pretty.png" />
+                </a>
+              </figure>
+              <div class="content pt-4">
+                <a
+                  class="hover-project-underline-animation title is-4"
+                  href="./procquire.html"
+                  >Procquire</a
+                >
+                <p class="block mt-2">
+                  A solution built to address anti-corruption in the procurement
+                  process that was built during the African Youth
+                  Anti-Corruption month long Hackathon run by the UNODC.
+                </p>
+                <a
+                  class="has-text-info has-text-weight-bold"
+                  href="./procquire.html"
+                  >VIEW PROJECT ➡</a
+                >
               </div>
-              <a
-                class="has-text-info has-text-weight-bold"
-                href="./procquire.html"
-                >VIEW PROJECT ➡</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="columns mt-4">
-          <div class="column is-half">
-            <figure class="image is-16by9">
-              <a class="title is-4" href="./productlist.html">
-                <img src="./images/product_list_homepage_pretty.png" />
-              </a>
-            </figure>
-            <div class="content pt-4">
-              <a class="title is-4" href="./productlist.html">Product List</a>
-              <p class="block mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse vehicula ante in turpis interdum feugiat quis nec
-                tortor.
-              </p>
-              <div class="tags">
-                <span class="tag is-success">Personal</span>
-              </div>
-
-              <a
-                class="has-text-info has-text-weight-bold"
-                href="./productlist.html"
-                >VIEW PROJECT ➡</a
-              >
-            </div>
-          </div>
-          <div class="column is-half">
-            <figure class="image is-16by9">
-              <a class="title is-4" href="./procquire.html">
-                <img src="./images/proquire_home_page_pretty.png" />
-              </a>
-            </figure>
-            <div class="content pt-4">
-              <a class="title is-4" href="./procquire.html">Procquire</a>
-              <p class="block mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse vehicula ante in turpis interdum feugiat quis nec
-                tortor.
-              </p>
-              <div class="tags">
-                <span class="tag is-info">Hackerthon</span>
-              </div>
-              <a
-                class="has-text-info has-text-weight-bold"
-                href="./procquire.html"
-                >VIEW PROJECT ➡</a
-              >
             </div>
           </div>
         </div>
@@ -180,21 +136,21 @@
     <!-- Writing -->
     <section class="section" id="writing">
       <div class="container">
-        <h2 class="title">Writing</h2>
+        <h2 class="title">Writing 📝</h2>
         <p class="content">
           I've written articles on Section.io's Engineering Education blog that
           have ammassed a total of
           <br />
-           20,000+ page views ✨
+          ✨20,000+ page views ✨
           <br />
         </p>
         <p class="has-text-weight-medium">Here are my favourite ones:</p>
-        <div class="columns mt-6">
+        <div class="columns mt-4">
           <div class="column is-half">
             <div class="content pt-4">
               <a
                 target="”_blank”"
-                class="title is-4"
+                class="hover-article title is-4"
                 href="https://www.section.io/engineering-education/setup-ssh-ubuntu-vm-aws/"
                 >How To Setup and SSH into an Ubuntu 18.04 Virtual Machine on
                 AWS</a
@@ -225,7 +181,7 @@
               </p>
               <a
                 target="”_blank”"
-                class="has-text-success has-text-weight-bold"
+                class="hover-article-underline-animation has-text-weight-bold"
                 href="https://www.section.io/engineering-education/setup-ssh-ubuntu-vm-aws/"
                 >Read on the Engineering Education blog</a
               >
@@ -235,7 +191,7 @@
             <div class="content pt-4">
               <a
                 target="”_blank”"
-                class="title is-4"
+                class="hover-article article-hover title is-4"
                 href="https://www.section.io/engineering-education/js-execution-under-the-hood/"
                 >What Happens When JavaScript Runs My Code?
               </a>
@@ -266,7 +222,7 @@
               </p>
               <a
                 target="”_blank”"
-                class="has-text-success has-text-weight-bold"
+                class="hover-article-underline-animation has-text-weight-bold"
                 href="https://www.section.io/engineering-education/js-execution-under-the-hood/"
                 >Read on the Engineering Education blog</a
               >
@@ -280,7 +236,7 @@
     <!-- recommendations -->
     <section class="section" id="recommendations">
       <div class="container">
-        <h2 class="title">Recommendations</h2>
+        <h2 class="title">Recommendations ✅</h2>
         <p class="content">
           I have interned at two startups,
           <span
@@ -394,5 +350,50 @@
       </div>
     </section>
     <!-- recommendations -->
+
+    <!-- contact and footer -->
+    <footer class="footer mt-6" id="contact">
+      <div class="container">
+        <div class="content">
+          <h2 class="title">I would love to hear from you! 📫</h2>
+          <p></p>
+          <p class="content">
+            Feel free to reach out if you're looking for a
+            <br />
+            developer, have a question, or just want to connect.
+          </p>
+          <a
+            target="_blank"
+            href="mailto:adrianmurage21@gmail.com"
+            class="mt-4 mb-6 has-text-weight-bold email"
+            >adrianmurage21@gmail.com</a
+          >
+        </div>
+      </div>
+
+      <div class="container mt-6">
+        <div class="mt-6 content is-size-5 has-text-centered">
+          <p>
+            <span>Hand made with 💗 by</span>
+            <span class="has-text-info has-text-weight-bold"
+              >Adrian Murage</span
+            >
+          </p>
+          <!-- <figure class="image"> -->
+          <img
+            style="
+              width: 30%;
+              height: auto;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            "
+            src="./images/made_with_bulma.png"
+          />
+          <!-- </figure> -->
+        </div>
+      </div>
+    </footer>
+    <!-- contact and footer -->
   </body>
 </html>

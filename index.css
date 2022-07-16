@@ -4,3 +4,85 @@ html {
 /* * {
   box-sizing: border-box;
 } */
+
+.hover-project-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-project-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: -8px;
+  left: 0;
+  background-color: hsl(204, 86%, 53%);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-project-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.hover-image:hover .hover-project-underline-animation:after {
+  transform: scale(1);
+  transform-origin: bottom left;
+}
+
+.hover-article-underline-animation {
+  display: inline-block;
+  position: relative;
+  /* outline: solid red; */
+  color: hsl(141, 71%, 48%);
+}
+
+.hover-article-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -7px;
+  left: 0;
+  background-color: hsla(153, 53%, 43%, 1);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-article-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.hover-article:hover ~ .hover-article-underline-animation:after {
+  transform: scale(1);
+  transform-origin: bottom left;
+  color: hsla(153, 53%, 43%, 1);
+}
+.hover-article:hover ~ .hover-article-underline-animation {
+  color: hsla(153, 53%, 43%, 1);
+}
+
+.hover-article-underline-animation:hover {
+  color: hsla(153, 53%, 43%, 1);
+}
+
+
+.email{
+  display: inline-block;
+  position: relative;
+  color: #275982;
+}
+.email:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -7px;
+  left: 0;
+  background-color: #275982;
+}
