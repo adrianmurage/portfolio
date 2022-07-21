@@ -9,6 +9,7 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
     <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js"></script>
   </head>
 
   <body>
@@ -410,18 +411,5 @@
       </div>
     </footer>
     <!-- contact and footer -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        (document.querySelectorAll(".notification .delete") || []).forEach(
-          ($delete) => {
-            const $notification = $delete.parentNode;
-
-            $delete.addEventListener("click", () => {
-              $notification.parentNode.removeChild($notification);
-            });
-          }
-        );
-      });
-    </script>
   </body>
 </html>
