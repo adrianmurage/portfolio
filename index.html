@@ -35,6 +35,21 @@
     </section>
     <!-- navbar -->
 
+    <!-- not done notification -->
+    <div
+      class="notification is-primary mx-6 content hithere"
+      style="max-width: fit-content"
+    >
+      <button class="delete"></button>
+      Hey there! I'm super stoked that you're interested in my portfolio.
+      <br />
+      This is just to let you know that it's undergoing some renovations in the
+      <strong>About me</strong> and <strong>Projects</strong> sections.
+      <br />
+      Thanks for stopping by and I hope you enjoy your stay!
+    </div>
+    <!-- not done notification -->
+
     <!-- about -->
     <section class="section" id="about">
       <div class="container">
@@ -395,5 +410,18 @@
       </div>
     </footer>
     <!-- contact and footer -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        (document.querySelectorAll(".notification .delete") || []).forEach(
+          ($delete) => {
+            const $notification = $delete.parentNode;
+
+            $delete.addEventListener("click", () => {
+              $notification.parentNode.removeChild($notification);
+            });
+          }
+        );
+      });
+    </script>
   </body>
 </html>
