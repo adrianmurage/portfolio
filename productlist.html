@@ -170,6 +170,130 @@
     </section>
     <section class="section mt-6">
       <div class="container">
+        <h2 class="title">Database Normalization</h2>
+        <div class="columns">
+          <div class="column content">
+            <p>
+              The general values I had to consider were:
+              <strong> SKU (unique for each product), Name, Price.</strong>
+            </p>
+            <p>
+              The product specific attributes:
+              <strong>
+                Size (in MB) for DVD-disk, Weight (in Kg) for Books and
+                Dimensions (HxWxL) for Furniture.</strong
+              >
+            </p>
+            <p>
+              I first transferred these values into table format in their
+              Un-normalized form.
+            </p>
+            <p>
+              I then identified that there were no repeating groups. Therefore
+              the data already satisfied the 1st Normal Form requirements.
+            </p>
+            <p>
+              There were also no partial dependencies therefore the data was
+              already in 2nd Normal Form.
+            </p>
+            <p>
+              There were however, transitive dependencies. Which created an
+              anomaly where if a product type that occurred only once were
+              deleted, the product type information would be lost. I solved this
+              anomaly by separating the table into two using the product type
+              name as a Foreign key in the Products table to link the two
+              tables.
+            </p>
+            <p>
+              The result of this normalization process is the two tables on the
+              right.
+            </p>
+          </div>
+          <div class="column">
+            <h3 class="title is-5">Products Table</h3>
+            <table class="tg">
+              <thead>
+                <tr>
+                  <th class="tg-0lax">ID</th>
+                  <th class="tg-0lax">Product SKU</th>
+                  <th class="tg-0lax">Product Name</th>
+                  <th class="tg-0lax">Product Price</th>
+                  <th class="tg-0lax">Product Type</th>
+                  <th class="tg-0lax">Product Measurements</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="tg-0lax">1</td>
+                  <td class="tg-0lax">KDNONE939</td>
+                  <td class="tg-0lax">Acme Disk</td>
+                  <td class="tg-0lax">1.00</td>
+                  <td class="tg-0lax">DVD-disk</td>
+                  <td class="tg-0lax">700</td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">2</td>
+                  <td class="tg-0lax">OIEIN938</td>
+                  <td class="tg-0lax">War and Peace</td>
+                  <td class="tg-0lax">20</td>
+                  <td class="tg-0lax">Book</td>
+                  <td class="tg-0lax">2</td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">3</td>
+                  <td class="tg-0lax">TREI3890</td>
+                  <td class="tg-0lax">Chari</td>
+                  <td class="tg-0lax">40</td>
+                  <td class="tg-0lax">Furniture</td>
+                  <td class="tg-0lax">24x45x15</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 class="title is-5 mt-6">Product Types Table</h3>
+            <table class="tg">
+              <thead>
+                <tr>
+                  <th class="tg-0lax">ID</th>
+                  <th class="tg-0lax">Product SKU</th>
+                  <th class="tg-0lax">Product Name</th>
+                  <th class="tg-0lax">Product Price</th>
+                  <th class="tg-0lax">Product Type</th>
+                  <th class="tg-0lax">Product Measurements</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="tg-0lax">1</td>
+                  <td class="tg-0lax">KDNONE939</td>
+                  <td class="tg-0lax">Acme Disk</td>
+                  <td class="tg-0lax">1.00</td>
+                  <td class="tg-0lax">DVD-disk</td>
+                  <td class="tg-0lax">700</td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">2</td>
+                  <td class="tg-0lax">OIEIN938</td>
+                  <td class="tg-0lax">War and Peace</td>
+                  <td class="tg-0lax">20</td>
+                  <td class="tg-0lax">Book</td>
+                  <td class="tg-0lax">2</td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">3</td>
+                  <td class="tg-0lax">TREI3890</td>
+                  <td class="tg-0lax">Chari</td>
+                  <td class="tg-0lax">40</td>
+                  <td class="tg-0lax">Furniture</td>
+                  <td class="tg-0lax">24x45x15</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section mt-6">
+      <div class="container">
         <h2 class="title has-text-centered">Problems and Thought Processes</h2>
         <div class="columns mt-6">
           <div class="column">
@@ -200,9 +324,9 @@
           </p>
           <p>
             In this case, I needed to come up with a project brief with no prior
-            experience with react and no mentor that I could work with to come
-            up with one. I solved this by doing some research to find one that
-            was intended as a challenge for a PHP job.
+            experience with PHP and no mentor that I could work with to come up
+            with one. I solved this by doing some research to find one that was
+            intended as a challenge for a PHP job.
           </p>
           <p>
             Another problem that came up was how to manage my ENV variables. I
@@ -249,11 +373,11 @@
         <h2 class="title">Conclusion</h2>
         <p style="max-width: 660px" class="content">
           I still have a few features I would love to implement with this
-          project. I envision this as a stock management application. That said,
-          I'd really like to have the ability to generate individual product
-          pages where the admin can edit product information. I would also like
-          to work in some authorization where only admin level employees can
-          edit product information but all employees can add products.
+          project. I envision this as a stock management application. I'd really
+          like to have the ability to generate individual product pages where
+          the admin can edit product information. I would also like to work in
+          some authorization where only admin level employees can edit product
+          information but all employees can add products.
         </p>
         <p style="max-width: 660px" class="content"></p>
       </div>
