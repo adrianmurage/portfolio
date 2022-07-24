@@ -9,6 +9,7 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
     <link rel="stylesheet" href="./index.css" />
+    <script type="module" src="./annotate.js"></script>
     <script src="./index.js"></script>
   </head>
 
@@ -23,7 +24,7 @@
         </a>
         <div class="navbar-menu">
           <div class="navbar-end">
-            <a href="./index.html#about" class="navbar-item">⚡ About me</a>
+            <a href="./aboutme.html" class="navbar-item">⚡ About me</a>
             <a href="./index.html#projects" class="navbar-item">🛠 Projects</a>
             <a href="./index.html#writing" class="navbar-item">📝 Writing</a>
             <a href="./index.html#recommendations" class="navbar-item"
@@ -36,38 +37,114 @@
     </section>
     <!-- navbar -->
 
-    <!-- not done notification -->
-    <div
-      class="notification is-primary mx-6 content hithere"
-      style="max-width: fit-content"
-    >
-      <button class="delete"></button>
-      Hey there! I'm super stoked that you're interested in my portfolio.
-      <br />
-      This is just to let you know that it's undergoing some renovations in the
-      <strong>About me</strong> and <strong>Projects</strong> sections.
-      <br />
-      Thanks for stopping by and I hope you enjoy your stay!
-    </div>
-    <!-- not done notification -->
-
     <!-- about -->
-    <section class="section" id="about">
+    <section class="section">
       <div class="container">
+        <!-- not done notification -->
+        <!-- <div
+          class="notification is-primary content hithere"
+          style="max-width: 823px"
+        >
+          <button class="delete"></button>
+          Hey there! I'm super stoked that you're interested in my portfolio.
+          <br />
+          This is just to let you know that it's undergoing some renovations in
+          the
+          <strong>About me</strong> and <strong>Projects</strong> sections.
+          <br />
+          Thanks for stopping by and I hope you enjoy your stay!
+        </div> -->
+        <!-- not done notification -->
         <h1 class="title">Hi there, I'm Adrian 👋🏽</h1>
         <div class="columns">
           <div class="column is-half content">
+            <div class="tags are-medium is-rounded">
+              <span class="tag is-rounded is-white border-white">
+                <span class="icon">
+                  <svg
+                    style="width: 1.05em"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512"
+                  >
+                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                      fill="#328aff"
+                      d="M414.8 40.79L286.8 488.8C281.9 505.8 264.2 515.6 247.2 510.8C230.2 505.9 220.4 488.2 225.2 471.2L353.2 23.21C358.1 6.216 375.8-3.624 392.8 1.232C409.8 6.087 419.6 23.8 414.8 40.79H414.8zM518.6 121.4L630.6 233.4C643.1 245.9 643.1 266.1 630.6 278.6L518.6 390.6C506.1 403.1 485.9 403.1 473.4 390.6C460.9 378.1 460.9 357.9 473.4 345.4L562.7 256L473.4 166.6C460.9 154.1 460.9 133.9 473.4 121.4C485.9 108.9 506.1 108.9 518.6 121.4V121.4zM166.6 166.6L77.25 256L166.6 345.4C179.1 357.9 179.1 378.1 166.6 390.6C154.1 403.1 133.9 403.1 121.4 390.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4L121.4 121.4C133.9 108.9 154.1 108.9 166.6 121.4C179.1 133.9 179.1 154.1 166.6 166.6V166.6z"
+                    />
+                  </svg>
+                </span>
+                <span class="content">Full Stack Developer</span>
+              </span>
+              <span class="tag is-rounded is-white border-white">
+                <span class="icon">
+                  <svg
+                    style="width: 1.05em"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512"
+                  >
+                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                      fill="#894cff"
+                      d="M93.95 290.03A327.038 327.038 0 0 0 .17 485.11l-.03.23c-1.7 15.28 11.21 28.2 26.49 26.51a327.02 327.02 0 0 0 195.34-93.8l75.4-75.4-128.02-128.02-75.4 75.4zM485.49 26.51c-35.35-35.35-92.67-35.35-128.02 0l-21.76 21.76-36.56-36.55c-15.62-15.62-40.95-15.62-56.56 0L138.47 115.84c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0l87.15-87.15 19.59 19.59L191.98 192 320 320.02l165.49-165.49c35.35-35.35 35.35-92.66 0-128.02z"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="content">Technical Writer</span>
+              </span>
+              <span class="tag is-rounded is-white border-white">
+                <span class="icon">
+                  <svg
+                    style="width: 1.05em"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512"
+                  >
+                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                      fill="#5f6ceb"
+                      d="M423.5 0C339.5.3 272 69.5 272 153.5V224H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48h-48v-71.1c0-39.6 31.7-72.5 71.3-72.9 40-.4 72.7 32.1 72.7 72v80c0 13.3 10.7 24 24 24h32c13.3 0 24-10.7 24-24v-80C576 68 507.5-.3 423.5 0z"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="content">Open Source</span>
+              </span>
+              <span class="tag is-rounded is-white border-white">
+                <span class="icon">
+                  <svg
+                    style="width: 1.05em"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512"
+                  >
+                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                      fill="#ff7474"
+                      d="M544,32.72461V32l-.39648.39648C516.86914,12.32617,484.00391,0,448,0s-68.86914,12.32617-95.60352,32.39648L352,32v.72461C313.35156,61.93164,288,107.82422,288,160a159.95251,159.95251,0,0,0,3.89258,34.31445c-35.83985,5.3418-91.793,23.25782-131.89258,83.63867V192A96.105,96.105,0,0,0,64,96a32,32,0,0,0,0,64,32.04169,32.04169,0,0,1,32,32V448a64.06328,64.06328,0,0,0,64,64H336a15.9908,15.9908,0,0,0,16-16V480a32.00158,32.00158,0,0,0-32-32H288l128-96V496a15.9908,15.9908,0,0,0,16,16h32a15.9908,15.9908,0,0,0,16-16V316.77539A160.036,160.036,0,0,0,608,160C608,107.82422,582.64844,61.93164,544,32.72461ZM448,32a127.06647,127.06647,0,0,1,72.9375,23.0625L480,96H416L375.0625,55.0625A127.06647,127.06647,0,0,1,448,32Zm56,128a16,16,0,1,1-16-16A15.9908,15.9908,0,0,1,504,160Zm-80,0a16,16,0,1,1-16-16A15.9908,15.9908,0,0,1,424,160Zm24,128A128.14414,128.14414,0,0,1,320,160c0-32.16992,12.334-61.25391,32-83.76367V160a96,96,0,0,0,192,0V76.23633C563.666,98.74609,576,127.83008,576,160A128.14414,128.14414,0,0,1,448,288ZM162.94531,68.76953l39.71094,16.56055,16.5625,39.71094a5.32345,5.32345,0,0,0,9.53906,0l16.5586-39.71094,39.71484-16.56055a5.336,5.336,0,0,0,0-9.541l-39.71484-16.5586L228.75781,2.957a5.325,5.325,0,0,0-9.53906,0l-16.5625,39.71289-39.71094,16.5586a5.336,5.336,0,0,0,0,9.541Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="content">Cat Dad</span>
+              </span>
+            </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse vehicula ante in turpis interdum feugiat quis nec
-              tortor. Fusce sed quam neque. Fusce interdum fringilla tempor.
-              Integer ut tempus metus. Donec nec lectus eget purus pellentesque
-              tempor vel pulvinar ligula.
+              I am a
+              <span id="secondyear"
+                >2nd year Applied Computer Technology student</span
+              >
+              at the United States International University - Africa (USIU-A). I
+              so far have had the pleasure of interning both as a
+              <span id="engineer">Full Stack Engineer(Ajua)</span> and a
+              <span id="podcast">Podcast Editor(HackerNoon)</span>. Moving
+              forward, I look forward to joining a software engineering team as a <span id="fulltime">Full Time developer</span>.
+            </p>
+
+            <p>
+              I would love to be on a team that
+              <span id="challenge">challenges me</span> by assigning me tasks
+              that I am not yet capable of accomplishing in an effort to push me
+              further in my career as a developer.
             </p>
             <p>
-              Proin rutrum massa quis diam tincidunt, suscipit dignissim lectus
-              cursus. Sed sed ultrices libero, eget interdum enim. Nullam
-              commodo ex eu lacus auctor, nec malesuada sapien vestibulum.
+              If that happens to be you, I would love to
+              <a class="has-text-weight-bold" href="#contact">hear from you!</a>
             </p>
           </div>
           <div class="column is-flex is-justify-content-center">
@@ -139,6 +216,34 @@
                 <a
                   class="has-text-info has-text-weight-bold"
                   href="./procquire.html"
+                  >VIEW PROJECT ➡</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="columns mt-4">
+          <div class="hover-image column is-half">
+            <div class="card p-5">
+              <figure class="image is-16by9">
+                <a class="title is-4" href="./productlist.html">
+                  <img src="./images/product_list_homepage_pretty.png" />
+                </a>
+              </figure>
+              <div class="content pt-4">
+                <a
+                  class="hover-project-underline-animation title is-4"
+                  href="./productlist.html"
+                  >Productlist</a
+                >
+                <p class="block mt-2">
+                  A marketplace application I built to learn more about JSON Web
+                  Tokens(JWTs), Unit Testing, Deployement Pipelines and API
+                  Documentation.
+                </p>
+                <a
+                  class="has-text-info has-text-weight-bold"
+                  href="./productlist.html"
                   >VIEW PROJECT ➡</a
                 >
               </div>
@@ -411,5 +516,9 @@
       </div>
     </footer>
     <!-- contact and footer -->
+    <script
+      type="module"
+      src="https://unpkg.com/rough-notation?module"
+    ></script>
   </body>
 </html>
