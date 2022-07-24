@@ -11,9 +11,15 @@
     <link rel="stylesheet" href="./index.css" />
     <script type="module" src="./annotate.js"></script>
     <script src="./index.js"></script>
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
   </head>
 
   <body>
+    <!-- scroll to top -->
+    <button id="scrolltotop" title="Go to top">
+      Top
+    </button>
+    <!-- scroll to top -->
     <!-- navbar -->
     <section class="section">
       <nav class="navbar">
@@ -24,13 +30,22 @@
         </a>
         <div class="navbar-menu">
           <div class="navbar-end">
-            <a href="./aboutme.html" class="navbar-item">⚡ About me</a>
+            <!-- <a href="./aboutme.html" class="navbar-item">⚡ About me</a> -->
+            <a href="#" class="navbar-item">⚡ About me</a>
             <a href="./index.html#projects" class="navbar-item">🛠 Projects</a>
-            <a href="./index.html#writing" class="navbar-item">📝 Writing</a>
+            <a href="./index.html#publications" class="navbar-item"
+              >📝 Publications</a
+            >
             <a href="./index.html#recommendations" class="navbar-item"
               >✅ Recommendations</a
             >
             <a href="./index.html#contact" class="navbar-item">📫 Contact</a>
+            <a
+              href="https://blog.adrianmurage.com"
+              target="_blank"
+              class="navbar-item"
+              >📚 Blog</a
+            >
           </div>
         </div>
       </nav>
@@ -129,8 +144,15 @@
               <span id="secondyear"
                 >2nd year Applied Computer Technology student</span
               >
-              at the United States International University - Africa (USIU-A). I
-              so far have had the pleasure of interning both as a
+              at the United States International University - Africa (USIU-A).
+              Before joining University, I attended
+              <a class="has-text-weight-bold" href="https://moringaschool.com/"
+                >Moringa School</a
+              >
+              which is where I first learnt how to code.
+            </p>
+            <p>
+              I have since had the pleasure of interning both as a
               <span id="engineer">Full Stack Engineer(Ajua)</span> and a
               <span id="podcast">Podcast Editor(HackerNoon).</span> Moving
               forward, I look forward to joining a software engineering team as
@@ -173,30 +195,30 @@
           <div class="hover-image column is-half">
             <div class="card p-5">
               <figure class="image is-16by9">
-                <a class="title is-4" href="./marketplace.html">
-                  <img src="./images/marketplace_arch.png" />
+                <a class="title is-4" href="./productlist.html">
+                  <img src="./images/product_list_homepage_pretty.png" />
                 </a>
               </figure>
               <div class="content pt-4">
                 <a
                   class="hover-project-underline-animation title is-4"
-                  href="./marketplace.html"
-                  >PBP Marketplace</a
+                  href="./productlist.html"
+                  >Productlist</a
                 >
                 <p class="block mt-2">
-                  A marketplace application I built to learn more about JSON Web
-                  Tokens(JWTs), Unit Testing, Deployement Pipelines and API
-                  Documentation.
+                  This application was built to explore Object Oriented
+                  Programming(OOP) and practice Database Normalization after
+                  learning about Procedural PHP and working with Databases.
                 </p>
                 <a
                   class="has-text-info has-text-weight-bold"
-                  href="./marketplace.html"
+                  href="./productlist.html"
                   >VIEW PROJECT ➡</a
                 >
               </div>
             </div>
           </div>
-          <div class="hover-image column is-half">
+          <!-- <div class="hover-image column is-half">
             <div class="card p-5">
               <figure class="image is-16by9">
                 <a class="title is-4" href="./procquire.html">
@@ -221,21 +243,21 @@
                 >
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
-        <div class="columns mt-4">
+        <!-- <div class="columns mt-4">
           <div class="hover-image column is-half">
             <div class="card p-5">
               <figure class="image is-16by9">
-                <a class="title is-4" href="./productlist.html">
-                  <img src="./images/product_list_homepage_pretty.png" />
+                <a class="title is-4" href="./marketplace.html">
+                  <img src="./images/marketplace_arch.png" />
                 </a>
               </figure>
               <div class="content pt-4">
                 <a
                   class="hover-project-underline-animation title is-4"
-                  href="./productlist.html"
-                  >Productlist</a
+                  href="./marketplace.html"
+                  >PBP Marketplace</a
                 >
                 <p class="block mt-2">
                   A marketplace application I built to learn more about JSON Web
@@ -244,21 +266,21 @@
                 </p>
                 <a
                   class="has-text-info has-text-weight-bold"
-                  href="./productlist.html"
+                  href="./marketplace.html"
                   >VIEW PROJECT ➡</a
                 >
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <!-- projects -->
 
-    <!-- Writing -->
-    <section class="section" id="writing">
+    <!-- Publications -->
+    <section class="section" id="publications">
       <div class="container">
-        <h2 class="title">Writing 📝</h2>
+        <h2 class="title">Publications 📝</h2>
         <p class="content">
           I've written articles on Section.io's Engineering Education blog that
           have ammassed a total of
@@ -353,7 +375,7 @@
         </div>
       </div>
     </section>
-    <!-- Writing -->
+    <!-- Publications -->
 
     <!-- recommendations -->
     <section class="section" id="recommendations">

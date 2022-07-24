@@ -10,9 +10,13 @@
     />
     <link rel="stylesheet" href="./index.css" />
     <script src="./index.js"></script>
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
   </head>
 
   <body>
+    <!-- scroll to top -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- scroll to top -->
     <!-- navbar -->
     <section class="section">
       <nav class="navbar">
@@ -23,13 +27,21 @@
         </a>
         <div class="navbar-menu">
           <div class="navbar-end">
-            <a href="./aboutme.html" class="navbar-item">⚡ About me</a>
+            <!-- <a href="./aboutme.html" class="navbar-item">⚡ About me</a> -->
             <a href="./index.html#projects" class="navbar-item">🛠 Projects</a>
-            <a href="./index.html#writing" class="navbar-item">📝 Writing</a>
+            <a href="./index.html#publications" class="navbar-item"
+              >📝 Publications</a
+            >
             <a href="./index.html#recommendations" class="navbar-item"
               >✅ Recommendations</a
             >
             <a href="./index.html#contact" class="navbar-item">📫 Contact</a>
+            <a
+              href="https://blog.adrianmurage.com"
+              target="_blank"
+              class="navbar-item"
+              >📚 Blog</a
+            >
           </div>
         </div>
       </nav>
@@ -39,7 +51,6 @@
     <!-- project about -->
     <section class="section">
       <div class="container">
-
         <div class="columns">
           <div class="column">
             <h1 class="title">Productlist</h1>
@@ -71,11 +82,13 @@
             <span class="tag is-info">Solo Project</span>
           </div>
           <div class="column">
-            <h4 class="title is-6">Stack</h4>
-            <p class="has-text-weight-bold">PHP</p>
-            <p class="has-text-weight-bold">MYSQL</p>
-            <p class="has-text-weight-bold">HEROKU</p>
-            <p class="has-text-weight-bold">JAVASCRIPT</p>
+            <h4 class="title is-6">Documentation</h4>
+            <a
+              class="has-text-weight-bold"
+              href="https://blog.adrianmurage.com/php-chad/"
+            >
+              Blog Post
+            </a>
           </div>
           <div class="column">
             <h4 class="title is-6">
@@ -175,7 +188,7 @@
         </div>
         <div
           style="max-width: 660px; margin-right: auto; margin-left: auto"
-          class="mt-6 content "
+          class="mt-6 content"
         >
           <p>
             I am a big fan of lists. I work through my projects by creating
@@ -199,16 +212,56 @@
           </p>
           <p>
             For routing, I customized a router I found on an opensource project
-            on GitHub together with the .htaccess file to perform URL rewrites
+            on GitHub. I then paired it together with the .htaccess file to
+            perform URL rewrites.
+          </p>
+          <p>
+            Lastly, to dynamically change the product form, I used AJAX and
+            pulled the relevant form values from the MySql database
           </p>
         </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div
+          style="margin-right: auto; margin-left: auto"
+          class="block card p-1"
+        >
+          <figure class="image">
+            <img src="./images/product_list_homepage_sc.png" />
+          </figure>
+        </div>
+        <div
+          style="margin-right: auto; margin-left: auto"
+          class="block card p-1"
+        >
+          <figure class="image">
+            <img src="./images/add_product.png" />
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h2 class="title">Conclusion</h2>
+        <p style="max-width: 660px" class="content">
+          I still have a few features I would love to implement with this
+          project. I envision this as a stock management application. That said,
+          I'd really like to have the ability to generate individual product
+          pages where the admin can edit product information. I would also like
+          to work in some authorization where only admin level employees can
+          edit product information but all employees can add products.
+        </p>
+        <p style="max-width: 660px" class="content"></p>
       </div>
     </section>
     <!-- contact and footer -->
     <footer class="footer mt-6" id="contact">
       <div class="container">
         <div class="content">
-          <h2 class="title">I would love to hear from you! 📫</h2>
+          <h2 class="title">Let's build something together</h2>
           <p></p>
           <p class="content">
             Feel free to reach out if you're looking for a
