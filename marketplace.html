@@ -63,23 +63,15 @@
             <h1 class="title">PBP Marketplace</h1>
             <div class="content">
               <p>
-                I created the PBP marketplace webapp as a side project to learn
-                more about
-                <!-- <br /> -->
-                JSON Web Tokens (JWTs), Unitesting, Deployement Pipelines
-                <!-- <br /> -->
-                and API Documentation.
-                <!-- <br /> -->
+                The PBP marketplace webapp is a side project I built to learn
+                more about JSON Web Tokens (JWTs), Unit Testing, Deployment
+                Pipelines and API Documentation.
               </p>
               <p>
-                My goal was to be able to tie all these pieces together to
-                create
-                <!-- <br /> -->
-                a decoupled architecture where the frontend is built in Angular
-                <!-- <br /> -->
-                and the backend is built in Python (Flask) and all communication
-                <!-- <br /> -->
-                between the two is facilited by an API.
+                In this project I utilized technologies like: the google maps
+                API, MongoDB, Flask, Angular, Heroku and JWTs. The end result
+                was an app that allows users to make orders and see the shops
+                they ordered from on a map.
               </p>
             </div>
           </div>
@@ -146,17 +138,17 @@
             <div class="block">
               <a
                 class="has-text-link has-text-weight-bold"
-                href="https://github.com/adrianmurage/PBP-FE"
-              >
-                Front End
-              </a>
-            </div>
-            <div>
-              <a
-                class="has-text-link has-text-weight-bold"
                 href="https://github.com/adrianmurage/PBP_BE"
               >
                 Back End
+              </a>
+            </div>
+            <div class="block">
+              <a
+                class="has-text-link has-text-weight-bold"
+                href="https://github.com/adrianmurage/PBP-FE"
+              >
+                Front End
               </a>
             </div>
           </div>
@@ -173,6 +165,34 @@
     </section>
 
     <section class="section">
+      <div class="container">
+        <div
+          style="margin-right: auto; margin-left: auto"
+          class="block card p-1"
+        >
+          <figure class="image">
+            <img src="./images/pbp_mapview.png" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="title">Project Purpose and Goal</h2>
+        <div class="content" style="max-width: 700px">
+          <p>
+            This project included multiple moving parts. I therefore took a
+            phased approach to building it. Where for each API resource built,
+            the adjacent user interface followed. This enabled me to keep making
+            progress on both fronts and to pick up breaking changes and
+            incompatibilities incrementally as the project grew.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section mt-6">
       <div class="container">
         <div class="columns">
           <div class="column">
@@ -192,21 +212,82 @@
                 wished to explore.
               </p>
               <p>
-                For the back end, Python (flask) was perfect. You only need
-                about 9 lines of code to get started. From there you can take
-                the app in any direction you wish to. This barebones nature of
-                flask allowed me to build my own structure and that was exactly
-                what I amimed for. app can be as simple as for this project
-                because I wanted to explore setting up the project in an
-                unopinionated environment that allowed me to build from
-                barebones.
+                For the back end, Python (flask) made the most sense. It was
+                lightweight and took next to nothing to setup as seen on the
+                image on the left. It also has a library that supports MongoDB
+                which was my database of choice.
               </p>
               <p>
-                For the frontend, I picked Angular simply because I am familiar
-                with it and setting it up would be a breeze.
+                For the frontend, I picked Angular(TypeScript) simply because I
+                am familiar with it and setting it up was a breeze.
+              </p>
+              <p>
+                Heroku was my chosen deployment factory as it supports both
+                Flask and Angular applications and it has provisions for
+                automated Deployment pipelines.
               </p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div
+          style="margin-right: auto; margin-left: auto"
+          class="block card p-1"
+        >
+          <figure class="image">
+            <img src="./images/pbp_api_spec.png" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="title has-text-centered">Problems and Thought Process</h2>
+        <div
+          style="max-width: 660px; margin-right: auto; margin-left: auto"
+          class="mt-6 content"
+        >
+          <p>
+            Like most projects, I ran into a few bumps along the way. One
+            challenge was the organization and structure of the code. Because of
+            the project's size, I realized how important it was to have a clear
+            and organized structure.
+          </p>
+          <p>
+            I strived to keep components as reusable as possible. I achieved
+            this by making sure that the components were single function. Which
+            made them easy to test and debug.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div
+          style="margin-right: auto; margin-left: auto"
+          class="block card p-1"
+        >
+          <figure class="image">
+            <img src="./images/kanban.png" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="title">Lessons Learned</h2>
+        <div style="max-width: 660px" class="mt-6 content">
+          <p>
+            I could spend all day describing the lessons that I learned working on this project, but the most important ones involved my newfound understanding of Building and documenting Rest APIs, use of JWTs for authentication and authorization, Git management, TypeScript, Google Maps API, and Kanban boards for project management.
+          </p>
+          <p>When I first began, my main objective was to hack things together and just get them working and move on. But now I know how doing so can come back to bite you. And while I still start out with the get it working then get it readable principle, I spend a lot more time refactoring for the best readability and far fewer headaches</p>
         </div>
       </div>
     </section>
